@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy.random as rnd
+
+# Generate data
+x = rnd.randn(100)
+y = rnd.randn(100)
+size = rnd.rand(100) * 100
+
+# Create bubble chart
+fig, ax = plt.subplots()
+ax.scatter(x, y, s=size, alpha=0.75)
+
+# Add labels and title
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_title('Bubble Chart')
+
+# Show plot
+plt.show()
