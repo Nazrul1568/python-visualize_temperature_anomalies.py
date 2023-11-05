@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create some data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Plot the data
+plt.plot(x, y1, label="Sine")
+plt.plot(x, y2, label="Cosine")
+
+# Add labels and legend
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Line Plot with Multiple Lines")
+plt.legend()
+
+# Show the plot
+plt.show()
